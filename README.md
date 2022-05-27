@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+More information: [Vercel - Github](https://github.com/vercel/next.js/tree/canary/examples/with-mantine), [Mantinedev - Github](https://github.com/mantinedev/mantine-next-template)
+
 ## Getting Started
 
 First, run the development server:
