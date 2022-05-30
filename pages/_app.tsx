@@ -1,12 +1,9 @@
 import type { AppProps } from "next/app";
 import type { GetServerSidePropsContext } from "next";
+import type { ColorScheme } from "@mantine/core";
 import { useState } from "react";
 import { getCookie, setCookies } from "cookies-next";
-import {
-  MantineProvider,
-  ColorSchemeProvider,
-  ColorScheme,
-} from "@mantine/core";
+import { MantineProvider, ColorSchemeProvider } from "@mantine/core";
 
 function MyApp(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
