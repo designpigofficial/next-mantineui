@@ -179,6 +179,13 @@
     react-popper "^2.2.5"
     react-textarea-autosize "^8.3.2"
 
+"@mantine/ds@^5.1.5":
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/@mantine/ds/-/ds-5.1.5.tgz#4fac5eae3bc732cb47b778a0483fedb9175d8d12"
+  integrity sha512-2yXfsx1s3dwTeWB4BMeiO/KEm9sopuxYbrtcOSTNe3YNg2eLXtJ4aVeefblUJtw2zJ9TsIlwfRpRTsNEI8/IfA==
+  dependencies:
+    "@mantine/utils" "5.1.5"
+
 "@mantine/hooks@^4.2.6":
   version "4.2.12"
   resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-4.2.12.tgz#8dfbd23763959b721f5c5c784b3c412bb7c9823a"
@@ -216,6 +223,11 @@
     "@emotion/utils" "1.0.0"
     clsx "^1.1.1"
     csstype "3.0.9"
+
+"@mantine/utils@5.1.5":
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-5.1.5.tgz#416541d304538d2ce4c2c1e3ea494bfd1ec3dd6f"
+  integrity sha512-c8pJE/mM4dAdjLfQCmFC4V9VNF0rTpiS46nxBoUzGShHkr7NTLOfkzws3hYzYFNvJ2MvNMQu//QOXZrnrAPRTw==
 
 "@next/env@12.1.6":
   version "12.1.6"
@@ -409,6 +421,11 @@
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.4.tgz#0c8b74c50f29ee44f423f7416829c0bf8bb5eb27"
   integrity sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==
+
+"@tabler/icons@^1.82.0":
+  version "1.82.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.82.0.tgz#ff135e6fec136e2128faa6e30b93e64d8bf42b77"
+  integrity sha512-Ai5vbnOvJ38oQ7mHVvWAZ0oUzLtdd83oxQmxOnvX9jaHYDhkQbFVRofBY+Z1W/+NOPcxe5k3iI9rf8q0VINCHg==
 
 "@types/cookie@^0.4.1":
   version "0.4.1"

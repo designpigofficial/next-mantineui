@@ -4,6 +4,7 @@ import type { ColorScheme } from "@mantine/core";
 import { useState } from "react";
 import { getCookie, setCookies } from "cookies-next";
 import { MantineProvider, ColorSchemeProvider } from "@mantine/core";
+import FooterCentered from 'components/FooterCentered'
 
 function MyApp(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
@@ -40,6 +41,7 @@ function MyApp(props: AppProps & { colorScheme: ColorScheme }) {
         }}
       >
         <Component {...pageProps} />
+        <FooterCentered />
       </MantineProvider>
     </ColorSchemeProvider>
   );
