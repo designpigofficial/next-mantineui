@@ -39,7 +39,7 @@ const Home: NextPage = () => {
   const [selectValue, setSelectValue] = useState<string | null>("");
 
   return (
-    <Container title="Next.js with Mantine UI">
+    <Container title="Abner Development Project Starter">
       <Box
         component="div"
         sx={{
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
           order={1}
           mr="md"
         >
-          Mantine UI
+          Abner Development
         </Title>
 
         <ColorSchemeToggle />
@@ -63,51 +63,23 @@ const Home: NextPage = () => {
         <Grid.Col sm={6}>
           <Box className={classes.box}>
             <Text component="p" mt={0}>
-              Thanks for stopping by and checking out{" "}
+              Check out the {" "}
               <Anchor
-                href="https://mantine.dev/"
+                href="https://github.com/designpigofficial/next-mantineui.git"
                 target="_blank"
-                color="orange"
+                color="pink"
               >
-                Mantine
-              </Anchor>{" "}
-              you are awesome!
+                Github              </Anchor>{" "}
+              repo!
             </Text>
-
-            <CustomButton
-              onClick={() => console.log("Mantine UI 😎")}
-              title="Click and check the console"
-            >
-              Button
-            </CustomButton>
-
-            <Slider
-              mt="md"
-              size="lg"
-              color="violet"
-              value={sliderValue}
-              onChange={setSliderValue}
-              max={50}
-            />
           </Box>
         </Grid.Col>
         <Grid.Col sm={6}>
           <Box className={classes.box}>
             <Text component="p" mt={0} mb="xs" transform="capitalize">
-              Select : {selectValue || "Pick one 👇"}
+              Component List...
             </Text>
-
-            <Select
-              placeholder="Pick one"
-              value={selectValue}
-              onChange={setSelectValue}
-              data={[
-                { value: "react", label: "React" },
-                { value: "angular", label: "Angular" },
-                { value: "svelte", label: "Svelte" },
-                { value: "vue", label: "Vue" },
-              ]}
-            />
+            <CustomButton>button</CustomButton>
           </Box>
         </Grid.Col>
       </Grid>

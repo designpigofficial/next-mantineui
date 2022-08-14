@@ -6,12 +6,12 @@ const CustomButton = (props: ButtonProps<"button">) => {
     <Button
       {...props}
       // sx={(theme) => ({
-      //   backgroundColor: theme.colors.teal[7],
-      //   color: "#ffffff",
-      //   "&:hover": {
-      //     backgroundColor: theme.colors.teal[9],
-      //   },
-      // })}
+      // backgroundColor: theme.colors.pink[7],
+      // color: "#ffffff",
+      // "&:hover": {
+      // backgroundColor: theme.colors.pink[9],
+      // },
+    // })}
     />
   );
 };
