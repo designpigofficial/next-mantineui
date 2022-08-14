@@ -1,6 +1,4 @@
 import { createStyles, Anchor, Group, ActionIcon } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
-import { MantineLogo } from '@mantine/ds';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -29,6 +27,30 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
+  links: [
+    {
+      "link": "#",
+      "label": "Contact"
+    },
+    {
+      "link": "#",
+      "label": "Privacy"
+    },
+    {
+      "link": "#",
+      "label": "Blog"
+    },
+    {
+      "link": "#",
+      "label": "Store"
+    },
+    {
+      "link": "#",
+      "label": "Careers"
+    }
+  ]
+
+
 interface FooterCenteredProps {
   links: { link: string; label: string }[];
 }
@@ -51,21 +73,9 @@ export function FooterCentered({ links }: FooterCenteredProps) {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <MantineLogo size={28} />
-
+        <p>Abner Development</p>
         <Group className={classes.links}>{items}</Group>
 
-        <Group spacing="xs" position="right" noWrap>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandTwitter size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
-            <IconBrandInstagram size={18} stroke={1.5} />
-          </ActionIcon>
-        </Group>
       </div>
     </div>
   );

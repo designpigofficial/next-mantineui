@@ -3,7 +3,6 @@ import { useState } from "react";
 import Container from "components/Container";
 import CustomButton from "components/CustomButton";
 import ColorSchemeToggle from "components/ColorSchemeToggle";
-import NavbarSimple from "components/NavbarSimple"
 import {
   createStyles,
   Title,
