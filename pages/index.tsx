@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import Container from "components/Container";
-import CustomButton from "components/CustomButton";
-import ColorSchemeToggle from "components/ColorSchemeToggle";
+import HeaderResponsive from "components/Header"
 import {
   createStyles,
   Title,
@@ -38,49 +37,25 @@ const Home: NextPage = () => {
 
   return (
     <Container title="Abner Development Project Starter">
-      <Box
-        component="div"
-        sx={{
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Title
-          // className={cx(classes.title, classes.box)}
-          className={classes.title}
-          order={1}
-          mr="md"
-        >
-          Abner Development
-        </Title>
-
-        <ColorSchemeToggle />
-      </Box>
-
-      <Grid mt="md" justify="center" align="center">
-        <Grid.Col sm={6}>
-          <Box className={classes.box}>
-            <Text component="p" mt={0}>
-              Check out the {" "}
-              <Anchor
-                href="https://github.com/designpigofficial/next-mantineui.git"
-                target="_blank"
-                color="pink"
-              >
-                Github              </Anchor>{" "}
-              repo!
-            </Text>
-          </Box>
-        </Grid.Col>
-        <Grid.Col sm={6}>
-          <Box className={classes.box}>
-            <Text component="p" mt={0} mb="xs" transform="capitalize">
-              Component List...
-            </Text>
-            <CustomButton>button</CustomButton>
-          </Box>
-        </Grid.Col>
-      </Grid>
+      <HeaderResponsive links={[
+    {
+      "link": "/about",
+      "label": "Features"
+    },
+    {
+      "link": "/pricing",
+      "label": "Pricing"
+    },
+    {
+      "link": "/learn",
+      "label": "Learn"
+    },
+    {
+      "link": "/community",
+      "label": "Community"
+    }
+  ]
+} />
     </Container>
   );
 };

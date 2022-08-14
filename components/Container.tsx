@@ -15,8 +15,8 @@ const Container = (props: Props) => {
   const router = useRouter();
 
   const meta = {
-    title: "Next.js",
-    description: "Page description",
+    title: "Abner Development",
+    description: "Project Starter built with Next.js, Mantine and Tailwindcss",
     image:
       "https://assets.vercel.com/image/upload/q_auto/front/zeit/twitter-card.png",
     type: "website",
