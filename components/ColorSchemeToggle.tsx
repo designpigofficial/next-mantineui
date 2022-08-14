@@ -7,12 +7,15 @@ const ColorSchemeToggle = () => {
 
   return (
     <CustomButton
+      styles={{ }}
       variant="outline"
-      color={dark ? "yellow" : "dark"}
+      color={dark ? "blue" : "dark"}
       title="Change the theme"
+      p={7}
+      radius={15}
       onClick={() => toggleColorScheme()}
     >
-      {dark ? "Light" : "Dark"}
+      {dark ? "🌕" : "🌒"}
     </CustomButton>
   );
 };

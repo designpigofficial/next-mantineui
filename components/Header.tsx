@@ -107,7 +107,6 @@ export default function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
-        <ColorSchemeToggle />
 
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 
@@ -118,6 +117,7 @@ export default function HeaderResponsive({ links }: HeaderResponsiveProps) {
             </Paper>
           )}
         </Transition>
+        
       </Container>
     </Header>
   );

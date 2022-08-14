@@ -1,24 +1,30 @@
+/* eslint-disable react/jsx-key */
 import type { NextPage } from "next";
 import { useState } from "react";
-import Container from "components/Container";
 import HeaderResponsive from "components/Header"
 import {
   createStyles,
   Title,
   Text,
   Box,
-  Grid,
-  Anchor,
 } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   box: {
-    backgroundColor:
-      theme.colorScheme === "dark"
-        ? theme.colors.dark[9]
-        : theme.colors.gray[3],
+    backgroundColor: 'transparent',
     padding: theme.spacing.lg,
     borderRadius: theme.radius.md,
+    zIndex:1,
+  },
+  contentBox: {
+    backgroundColor: 'transparent',
+    padding: theme.spacing.lg,
+    borderRadius: theme.radius.md,
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    marginTop: '25px',
+    zIndex:1,
   },
   title: {
     display: "inline-block",
@@ -26,6 +32,21 @@ const useStyles = createStyles((theme) => ({
     [`@media (max-width: ${theme.breakpoints.md}px)`]: {
       fontSize: "28px",
     },
+  },
+  video: {
+    width: '100vw',
+    height: '100vh',
+    objectFit: 'cover',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    zIndex:-1,
+
+  },
+  h1: {
+    color: '#fff',
+    textAlign: 'center',
+    marginTop: '50vh',
   },
 }));
 
@@ -36,31 +57,36 @@ const Home: NextPage = () => {
   const [selectValue, setSelectValue] = useState<string | null>("");
 
   return (
-    <Container title="Abner Development Project Starter">
-      <HeaderResponsive links={[
-    {
-      "link": "/events",
-      "label": "Events"
-    },
-    {
-      "link": "/service",
-      "label": "Bottle Service"
-    },
-    {
-      "link": "/learn",
-      "label": "Nightly Specials"
-    },
-    {
-      "link": "/gallery",
-      "label": "Gallery"
-    },
-    {
-      "link": "/contact",
-      "label": "Contact"
-    }
-  ]
-} />
-    </Container>
+    <><video src="/MyVideo.mp4" className={classes.video} autoPlay playsInline muted loop />
+      <Box className={classes.box}>
+        <HeaderResponsive links={[
+          {
+            "link": "/events",
+            "label": "Events"
+          },
+          {
+            "link": "/service",
+            "label": "Bottle Service"
+          },
+          {
+            "link": "/learn",
+            "label": "Nightly Specials"
+          },
+          {
+            "link": "/gallery",
+            "label": "Gallery"
+          },
+          {
+            "link": "/contact",
+            "label": "Contact"
+          }
+          ]} />
+        <Box className={classes.contentBox}>
+          <Title className={classes.h1}>hello</Title>
+          <Text>some sub heading goes here</Text>
+        </Box>
+      </Box>
+      </>
   );
 };
 
