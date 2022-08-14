@@ -39,20 +39,24 @@ const Home: NextPage = () => {
     <Container title="Abner Development Project Starter">
       <HeaderResponsive links={[
     {
-      "link": "/about",
-      "label": "Features"
+      "link": "/events",
+      "label": "Events"
     },
     {
-      "link": "/pricing",
-      "label": "Pricing"
+      "link": "/service",
+      "label": "Bottle Service"
     },
     {
       "link": "/learn",
-      "label": "Learn"
+      "label": "Nightly Specials"
     },
     {
-      "link": "/community",
-      "label": "Community"
+      "link": "/gallery",
+      "label": "Gallery"
+    },
+    {
+      "link": "/contact",
+      "label": "Contact"
     }
   ]
 } />

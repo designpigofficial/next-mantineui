@@ -55,7 +55,7 @@ const Container = (props: Props) => {
         my="lg"
         px="md"
         sx={(theme) => ({
-          maxWidth: theme.breakpoints.md,
+          maxWidth: theme.breakpoints.xl,
           marginLeft: "auto",
           marginRight: "auto",
         })}

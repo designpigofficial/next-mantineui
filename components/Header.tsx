@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { createStyles, Header, Container, Group, Burger, Paper, Transition } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Logo from 'components/Logo'
-const HEADER_HEIGHT = 85;
+import ColorSchemeToggle from './ColorSchemeToggle';
+const HEADER_HEIGHT = 80;
 
 const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
     zIndex: 1,
+    maxWidth:'100%',
   },
 
   dropdown: {
@@ -31,6 +33,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     height: '100%',
+    width: '100%',
   },
 
   links: {
@@ -104,6 +107,7 @@ export default function HeaderResponsive({ links }: HeaderResponsiveProps) {
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
+        <ColorSchemeToggle />
 
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 
