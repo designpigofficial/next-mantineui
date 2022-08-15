@@ -8,6 +8,8 @@ import {
   Text,
   Box,
 } from "@mantine/core";
+import ContactForm from 'components/ContactForm'
+import ContactInfo from 'components/ContactInfo'
 
 const useStyles = createStyles((theme) => ({
   box: {
@@ -86,6 +88,8 @@ const Home: NextPage = () => {
           <Text>some sub heading goes here</Text>
         </Box>
       </Box>
+        <ContactInfo />
+          <ContactForm />
       </>
   );
 };
