@@ -1,19 +1,24 @@
 /* eslint-disable react/jsx-key */
+import Head from 'next/head';
 import type { NextPage } from "next";
-import { useState } from "react";
-import HeaderResponsive from "components/Header"
 import {
   createStyles,
-  Title,
-  Text,
   Box,
 } from "@mantine/core";
-import ContactForm from 'components/ContactSection/ContactForm'
-import ContactInfo from 'components/ContactSection/ContactInfo'
+
+import Hero from 'components/HeroSection/index'
+import About from 'components/AboutSection/index'
+import Service from 'components/ServiceSection/index'
+import Events from 'components/EventsSection/index'
+import Gallery from 'components/GallerySection/index'
+import Contact from 'components/ContactSection/index'
+
 
 const useStyles = createStyles((theme) => ({
     box: {
       display: 'flex',
+      flexDirection: 'column',
+      height: '100vh',
       justifyContent: 'center',
       alignItems: 'center',
       padding: theme.spacing.lg
@@ -21,12 +26,31 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const Home: NextPage = () => {
-    const { classes, cx } = useStyles();
-
+  const { classes, cx } = useStyles();
     return (
+      <>
+      <Head>
+        <title>Abner Development Starter</title>
+      </Head>
       <Box className={classes.box}>
-        home page
+        <Hero />
       </Box>
+      <Box className={classes.box}>
+        <About />
+      </Box>
+      <Box className={classes.box}>
+        <Service />
+      </Box>
+      <Box className={classes.box}>
+        <Events />
+      </Box>
+      <Box className={classes.box}>
+        <Gallery />
+      </Box>
+      <Box className={classes.box}>
+        <Contact />
+      </Box>
+      </>
     )
 }
 

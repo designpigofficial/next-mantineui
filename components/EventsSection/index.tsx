@@ -1,7 +1,4 @@
 /* eslint-disable react/jsx-key */
-import ContactInfo from './ContactInfo'
-import ContactForm from './ContactForm'
-import ContactMap from './ContactMap'
 import {
     createStyles,
     Container,
@@ -16,18 +13,16 @@ import {
         },
     }));
 
-    const Contact = () => {
+    const Events = () => {
     const { classes, cx } = useStyles();
         return (
         <>
         <Container className={classes.container}>
-            <ContactInfo />
-            <ContactForm />
-            <ContactMap />
+            Events Section
         </Container>
         </>
         )
 }
 
-export default Contact
+export default Events
 
