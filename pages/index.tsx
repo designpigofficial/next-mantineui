@@ -8,9 +8,39 @@ import {
   Text,
   Box,
 } from "@mantine/core";
-import ContactForm from 'components/ContactForm'
-import ContactInfo from 'components/ContactInfo'
+import ContactForm from 'components/ContactSection/ContactForm'
+import ContactInfo from 'components/ContactSection/ContactInfo'
 
+const useStyles = createStyles((theme) => ({
+    box: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: theme.spacing.lg
+    },
+}));
+
+const Home: NextPage = () => {
+    const { classes, cx } = useStyles();
+
+    return (
+      <Box className={classes.box}>
+        home page
+      </Box>
+    )
+}
+
+export default Home
+
+
+
+
+
+
+
+
+
+/**
 const useStyles = createStyles((theme) => ({
   box: {
     backgroundColor: 'transparent',
@@ -83,15 +113,16 @@ const Home: NextPage = () => {
             "label": "Contact"
           }
           ]} />
+
         <Box className={classes.contentBox}>
           <Title className={classes.h1}>hello</Title>
           <Text>some sub heading goes here</Text>
         </Box>
+
       </Box>
-        <ContactInfo />
-          <ContactForm />
       </>
   );
 };
 
 export default Home;
+*/
